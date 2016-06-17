@@ -33,6 +33,11 @@ public class NewBehaviourScript : MonoBehaviour {
             Durability -= col.relativeVelocity.sqrMagnitude;
         }
 
+        if (Durability <= 0)
+        {
+            Destroy(gameObject);
+        }
+
     }
 
 }
